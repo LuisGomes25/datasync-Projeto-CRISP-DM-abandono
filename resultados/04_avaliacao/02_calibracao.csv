@@ -1,0 +1,4 @@
+﻿etapa,prevalencia_real,prob_media_antes,prob_media_depois,brier_antes,brier_depois,precisao_top10_antes,precisao_top10_depois
+ensino_medio,0.2,0.372,0.2,0.1556,0.1235,0.594,0.594
+anos_finais,0.201,0.385,0.201,0.1696,0.1247,0.59,0.591
+anos_iniciais,0.153,0.379,0.153,0.1682,0.1037,0.533,0.532

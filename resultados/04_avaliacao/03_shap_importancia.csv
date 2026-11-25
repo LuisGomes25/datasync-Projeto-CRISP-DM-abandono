@@ -1,0 +1,61 @@
+﻿etapa,variavel,importancia_media_abs,direcao
+ensino_medio,SG_UF,0.0917,categórica (ver por categoria)
+ensino_medio,tdi_distorcao,0.0904,maior valor → maior prob.
+ensino_medio,pct_noturno,0.0421,maior valor → maior prob.
+ensino_medio,had_horas_aula,0.0238,maior valor → menor prob.
+ensino_medio,pct_integral,0.023,maior valor → menor prob.
+ensino_medio,ird_regularidade,0.0178,maior valor → menor prob.
+ensino_medio,inse_media,0.0169,maior valor → menor prob.
+ensino_medio,afd_formacao_adequada,0.0154,maior valor → menor prob.
+ensino_medio,atu_alunos_turma,0.0105,maior valor → menor prob.
+ensino_medio,icg_complexidade,0.0093,maior valor → maior prob.
+ensino_medio,pct_transporte_publico,0.0081,maior valor → menor prob.
+ensino_medio,indice_infra,0.0071,maior valor → menor prob.
+ensino_medio,alunos_por_docente,0.0066,maior valor → maior prob.
+ensino_medio,log_matriculas,0.0063,maior valor → maior prob.
+ensino_medio,ied_esforco_alto,0.0053,maior valor → menor prob.
+ensino_medio,dsu_doc_superior,0.0047,maior valor → menor prob.
+ensino_medio,NO_DEPENDENCIA,0.0021,categórica (ver por categoria)
+ensino_medio,NO_CATEGORIA,0.0019,categórica (ver por categoria)
+ensino_medio,flag_inse_ausente,0.0005,maior valor → menor prob.
+ensino_medio,flag_sem_turma_etapa,0.0,sem variação na amostra
+anos_finais,tdi_distorcao,0.9464,maior valor → maior prob.
+anos_finais,SG_UF,0.6089,categórica (ver por categoria)
+anos_finais,inse_media,0.2351,maior valor → menor prob.
+anos_finais,log_matriculas,0.1123,maior valor → maior prob.
+anos_finais,NO_DEPENDENCIA,0.1024,categórica (ver por categoria)
+anos_finais,afd_formacao_adequada,0.0933,maior valor → menor prob.
+anos_finais,pct_transporte_publico,0.0783,maior valor → menor prob.
+anos_finais,alunos_por_docente,0.0755,maior valor → menor prob.
+anos_finais,ird_regularidade,0.0504,maior valor → menor prob.
+anos_finais,icg_complexidade,0.0455,maior valor → maior prob.
+anos_finais,atu_alunos_turma,0.0444,maior valor → maior prob.
+anos_finais,pct_integral,0.0403,maior valor → menor prob.
+anos_finais,indice_infra,0.0337,maior valor → menor prob.
+anos_finais,had_horas_aula,0.0306,maior valor → menor prob.
+anos_finais,dsu_doc_superior,0.0256,maior valor → menor prob.
+anos_finais,ied_esforco_alto,0.0233,maior valor → menor prob.
+anos_finais,NO_CATEGORIA,0.0038,categórica (ver por categoria)
+anos_finais,flag_inse_ausente,0.001,maior valor → menor prob.
+anos_finais,pct_noturno,0.0007,maior valor → menor prob.
+anos_finais,flag_sem_turma_etapa,0.0,sem variação na amostra
+anos_iniciais,log_matriculas,0.666,maior valor → maior prob.
+anos_iniciais,tdi_distorcao,0.601,maior valor → maior prob.
+anos_iniciais,SG_UF,0.3297,categórica (ver por categoria)
+anos_iniciais,pct_transporte_publico,0.1356,maior valor → menor prob.
+anos_iniciais,icg_complexidade,0.1053,maior valor → maior prob.
+anos_iniciais,inse_media,0.0878,maior valor → menor prob.
+anos_iniciais,atu_alunos_turma,0.0697,maior valor → maior prob.
+anos_iniciais,ird_regularidade,0.0637,maior valor → menor prob.
+anos_iniciais,had_horas_aula,0.0507,maior valor → menor prob.
+anos_iniciais,alunos_por_docente,0.0481,maior valor → maior prob.
+anos_iniciais,flag_inse_ausente,0.0459,maior valor → maior prob.
+anos_iniciais,indice_infra,0.042,maior valor → menor prob.
+anos_iniciais,NO_DEPENDENCIA,0.0402,categórica (ver por categoria)
+anos_iniciais,pct_integral,0.0358,maior valor → menor prob.
+anos_iniciais,ied_esforco_alto,0.0332,maior valor → menor prob.
+anos_iniciais,afd_formacao_adequada,0.0273,maior valor → menor prob.
+anos_iniciais,NO_CATEGORIA,0.0246,categórica (ver por categoria)
+anos_iniciais,dsu_doc_superior,0.0108,maior valor → menor prob.
+anos_iniciais,flag_sem_turma_etapa,0.0024,maior valor → menor prob.
+anos_iniciais,pct_noturno,0.0,sem variação na amostra
