@@ -1,0 +1,4 @@
+﻿etapa,escolas,regra,limite,pct_alto
+ensino_medio,21229,taxa >= P80 (4.40%),4.4,20.03
+anos_finais,44803,taxa >= P80 (1.80%),1.8,20.12
+anos_iniciais,70681,taxa > 0 (P80 = 0),0.0,15.28

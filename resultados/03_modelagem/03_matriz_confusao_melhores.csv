@@ -1,0 +1,4 @@
+﻿etapa,melhor_modelo,TN,FP,FN,TP
+ensino_medio,Random_Forest,13566,3411,1330,2922
+anos_finais,Hist_Gradient_Boosting,26250,9539,2160,6854
+anos_iniciais,Hist_Gradient_Boosting,44428,15452,2910,7891
