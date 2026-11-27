@@ -1,0 +1,16 @@
+﻿etapa,quintil_inse,escolas,pct_alto_abandono,taxa_media
+anos_finais,Q1 (menor),7706,27.13,1.57
+anos_finais,Q2,7582,22.76,1.19
+anos_finais,Q3,7701,18.76,0.92
+anos_finais,Q4,7581,17.32,0.83
+anos_finais,Q5 (maior),7483,7.84,0.46
+anos_iniciais,Q1 (menor),9279,15.37,0.29
+anos_iniciais,Q2,8988,21.53,0.28
+anos_iniciais,Q3,9171,22.75,0.25
+anos_iniciais,Q4,9189,21.51,0.18
+anos_iniciais,Q5 (maior),8846,13.74,0.09
+ensino_medio,Q1 (menor),4016,19.62,2.51
+ensino_medio,Q2,3919,18.4,2.34
+ensino_medio,Q3,3989,23.99,2.71
+ensino_medio,Q4,3892,22.28,2.49
+ensino_medio,Q5 (maior),3887,13.64,1.79

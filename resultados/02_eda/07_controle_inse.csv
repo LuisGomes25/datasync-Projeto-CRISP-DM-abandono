@@ -1,0 +1,4 @@
+﻿etapa,n,coef_infra_sem_inse,p_sem,coef_infra_com_inse,p_com,coef_inse,r2_sem,r2_com
+ensino_medio,19703,-1.9171,0.0,-1.7421,0.0,-0.1478,0.0095,0.01
+anos_finais,38053,-1.3079,0.0,-0.2121,0.0102,-0.705,0.0182,0.0381
+anos_iniciais,45473,-0.1384,0.0,0.1015,0.0002,-0.1613,0.0015,0.0102

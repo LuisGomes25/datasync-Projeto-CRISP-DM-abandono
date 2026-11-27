@@ -1,0 +1,10 @@
+﻿etapa,NO_DEPENDENCIA,linhas,media,mediana,desvio,p75,p80,p90,pct_zero
+anos_finais,Estadual,17580,1.126,0.0,3.25,1.2,1.6,3.1,56.047
+anos_finais,Federal,42,0.995,0.0,4.423,0.2,0.28,0.5,66.667
+anos_finais,Municipal,27181,1.391,0.0,3.625,1.3,1.9,4.1,60.77
+anos_iniciais,Estadual,7788,0.557,0.0,2.915,0.0,0.3,1.1,77.324
+anos_iniciais,Federal,25,0.036,0.0,0.125,0.0,0.0,0.06,88.0
+anos_iniciais,Municipal,62868,0.274,0.0,1.349,0.0,0.0,0.5,85.633
+ensino_medio,Estadual,20413,2.524,1.0,4.021,3.6,4.4,7.0,38.128
+ensino_medio,Federal,624,1.373,0.6,4.352,1.6,2.0,3.3,30.288
+ensino_medio,Municipal,192,3.44,0.0,7.849,2.925,4.36,9.89,55.208
