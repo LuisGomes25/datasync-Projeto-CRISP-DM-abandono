@@ -1,0 +1,13 @@
+﻿tipo,etapa,tdi_distorcao,inse_media,log_matriculas,pct_noturno,indice_infra,afd_formacao_adequada,taxa_abandono,n,pct_rural
+acerto_na_lista,ensino_medio,33.9,4.94,5.67,31.61,0.75,58.0,8.6,1261,24.3
+falso_negativo,ensino_medio,19.4,4.99,5.39,0.0,0.88,62.4,6.4,2991,16.1
+falso_positivo,ensino_medio,32.8,4.98,5.68,36.12,0.75,56.25,1.35,862,27.3
+fora_e_baixo,ensino_medio,13.3,4.98,5.4,0.0,0.88,66.7,0.2,16115,14.7
+acerto_na_lista,anos_finais,43.7,4.39,4.87,0.0,0.5,44.4,5.1,2644,52.7
+falso_negativo,anos_finais,23.5,4.73,4.9,0.0,0.62,56.3,3.2,6370,41.4
+falso_positivo,anos_finais,43.1,4.44,4.63,0.0,0.38,43.1,0.0,1836,56.1
+fora_e_baixo,anos_finais,12.5,4.93,5.05,0.0,0.75,62.2,0.0,33953,33.3
+acerto_na_lista,anos_iniciais,15.6,4.8,5.92,0.0,0.62,81.3,0.8,3767,12.5
+falso_negativo,anos_iniciais,7.7,4.84,5.08,0.0,0.5,80.8,1.0,7034,36.3
+falso_positivo,anos_iniciais,15.7,4.75,5.75,0.0,0.62,82.4,0.0,3301,16.4
+fora_e_baixo,anos_iniciais,4.5,4.84,4.33,0.0,0.5,82.2,0.0,56579,55.0

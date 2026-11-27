@@ -1,0 +1,10 @@
+﻿etapa,k_pct,escolas_na_lista,acertos,precisao,recall,acaso,vezes_melhor_que_acaso
+ensino_medio,5,1061,685,0.646,0.161,0.2,3.2
+ensino_medio,10,2123,1261,0.594,0.297,0.2,3.0
+ensino_medio,20,4246,2228,0.525,0.524,0.2,2.6
+anos_finais,5,2240,1456,0.65,0.162,0.201,3.2
+anos_finais,10,4480,2644,0.59,0.293,0.201,2.9
+anos_finais,20,8961,4676,0.522,0.519,0.201,2.6
+anos_iniciais,5,3534,2202,0.623,0.204,0.153,4.1
+anos_iniciais,10,7068,3767,0.533,0.349,0.153,3.5
+anos_iniciais,20,14136,5996,0.424,0.555,0.153,2.8
