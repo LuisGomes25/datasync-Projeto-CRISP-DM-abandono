@@ -2,9 +2,22 @@
 
 Projeto final da disciplina **Data Project: Modeling & Implementation** (Faculdade Impacta de Tecnologia), professor Gilberto Alves Pereira. Metodologia **CRISP-DM**.
 
-**Objetivo:** identificar escolas públicas com maior probabilidade de registrar taxas altas de abandono e caracterizar seus perfis de vulnerabilidade, para apoiar a priorização de ações de permanência por secretarias de educação.
+**Objetivo:** identificar escolas públicas com maior chance de registrar taxas altas de abandono, em cada etapa de ensino, e caracterizar seus perfis de vulnerabilidade, para apoiar a priorização de ações de permanência por secretarias de educação.
 
-> O modelo é **associativo**: taxas e características das escolas são do mesmo período (Censo Escolar e Indicadores 2025, INSE 2023). Ele aponta escolas com perfil associado ao alto abandono; não prevê o ano seguinte nem indica causas. As conclusões valem para escolas, não para estudantes, e não se destinam a rankings punitivos.
+> **Leia antes de usar.** O modelo é **associativo**: taxas e características das escolas são do mesmo período (Censo Escolar e Indicadores Educacionais 2025, INSE 2023). Ele aponta escolas com perfil associado ao alto abandono; não prevê o ano seguinte nem indica causas. As conclusões valem para escolas, não para estudantes, e a lista não deve ser usada como ranking punitivo.
+
+## Unidade de análise e alvo
+
+- **Unidade:** a escola em cada etapa que oferece (**escola × etapa**): 136.713 registros de 96.231 escolas públicas. Uma mesma escola pode ter alto abandono em uma etapa e não em outra.
+- **Alvo (alto abandono)**, definido por etapa após a EDA:
+
+| Etapa | Regra | Prevalência |
+|---|---|---|
+| Ensino médio | taxa de abandono ≥ P80 (4,4%) | 20,0% |
+| Anos finais | taxa de abandono ≥ P80 (1,8%) | 20,1% |
+| Anos iniciais | taxa de abandono > 0 (o P80 é zero) | 15,3% |
+
+- Aprovação, reprovação e Ideb **não** entram como preditores (vazariam o alvo).
 
 ## Principais resultados
 
@@ -14,38 +27,45 @@ Projeto final da disciplina **Data Project: Modeling & Implementation** (Faculda
 | Anos finais | Hist Gradient Boosting | ~0,52 | ~0,59 | ~2,9× |
 | Anos iniciais | Hist Gradient Boosting | ~0,47 | ~0,53 | ~3,5× |
 
-Validação cruzada agrupada por município (5 dobras). Valores exatos em `resultados/`.
+Validação cruzada agrupada por município (5 dobras). **Critério de aceite:** precisão no top 10% ≥ 2× a prevalência e PR-AUC acima da Regressão Logística; atendido nas três etapas. Valores exatos em `resultados/`.
 
 ## Estrutura do repositório
 
-| Fase CRISP-DM | Notebook | Resultados |
-|---|---|---|
-| 1. Entendimento do negócio | — (relatório) | — |
-| 2. Entendimento dos dados | `notebooks/02_eda.ipynb` | `resultados/02_eda/` |
-| 3. Preparação dos dados | `notebooks/01_preparacao.ipynb` | `dados/tabela_analitica.csv` |
-| 4. Modelagem | `notebooks/03_modelagem.ipynb` | `resultados/03_modelagem/` |
-| 5. Avaliação | `notebooks/04_avaliacao.ipynb` | `resultados/04_avaliacao/` |
-| 6. Implantação | `notebooks/04_avaliacao.ipynb` (lista priorizada) | `resultados/05_implantacao/` |
+Os notebooks estão numerados na **ordem de execução**. A preparação vem antes da EDA porque a exploração foi feita sobre a tabela analítica já integrada (o CRISP-DM prevê esse vaivém entre as fases 2 e 3).
 
-A preparação vem antes da EDA na numeração porque a exploração foi feita sobre a tabela analítica já integrada; o CRISP-DM prevê esse vaivém entre as fases 2 e 3.
+| Ordem | Notebook | Fase CRISP-DM | Saída |
+|---|---|---|---|
+| — | — (relatório) | 1. Entendimento do negócio | — |
+| 01 | `notebooks/01_preparacao.ipynb` | 3. Preparação dos dados | `dados/tabela_analitica.csv` |
+| 02 | `notebooks/02_eda.ipynb` | 2. Entendimento dos dados | `resultados/02_eda/` |
+| 03 | `notebooks/03_modelagem.ipynb` | 4. Modelagem | `resultados/03_modelagem/` |
+| 04 | `notebooks/04_avaliacao_implantacao.ipynb` | 5. Avaliação e 6. Implantação | `resultados/04_avaliacao/` e `resultados/05_implantacao/` |
 
 ## Como executar
 
-1. Abra um notebook de `notebooks/` no Google Colab (botão *Open in Colab* no topo de cada arquivo).
-2. Use **Ambiente de execução → Executar tudo**. A primeira célula clona este repositório e instala as dependências de `requirements.txt`.
-3. Os notebooks 02 a 04 partem de `dados/tabela_analitica.csv` (136.713 linhas escola × etapa, 27 colunas) e rodam sem outros arquivos.
+1. Abra um notebook de `notebooks/` no Google Colab (em colab.research.google.com → Abrir notebook → GitHub, cole `LuisGomes25/datasync-Projeto-CRISP-DM-abandono`).
+2. Use **Ambiente de execução → Executar tudo**. A primeira célula clona este repositório.
+3. Os notebooks 02 a 04 partem de `dados/tabela_analitica.csv` e rodam sem outros arquivos. Ordem recomendada: 02 → 03 → 04 (o PDF do 04 usa gráficos do 02).
+4. Tempo aproximado no Colab gratuito: 02 ≈ 2 min; 03 ≈ 7 min; 04 ≈ 10–15 min. Os números podem variar na 3ª–4ª casa decimal entre execuções.
 
-**Notebook 01 (preparação):** usa os dados brutos do Inep, que não estão no repositório por tamanho. Para reproduzi-lo, baixe as bases abaixo e ajuste o caminho na primeira célula.
+**Notebook 01 (preparação):** usa os dados brutos do Inep, que não estão no repositório por tamanho. Ele monta o Google Drive e espera a pasta `DATASYNC_abandono_escolar_2025` com as bases abaixo.
 
 ## Fontes de dados (Inep)
 
 - Censo Escolar 2025 (microdados)
 - Indicadores Educacionais 2025: taxas de rendimento, TNR, AFD, ATU, DSU, HAD, ICG, IED, IRD, TDI
 - INSE 2023 por escola
-- Ideb 2025 (não usado como preditor: o componente de rendimento deriva da aprovação, o que vazaria o alvo)
+- Ideb 2025 (não usado como preditor)
 
 Portal: https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos
 
+## Limitações
+
+- Modelo associativo (ver aviso acima); o ano de referência das taxas está a confirmar na nota técnica do Inep.
+- Nos anos iniciais, o rótulo "taxa > 0" é sensível ao porte da escola (escolas pequenas têm mais chance de taxa zero).
+- XGBoost, previsto no planejamento, foi substituído por Hist Gradient Boosting (scikit-learn); hiperparâmetros fixos, sem busca.
+- Equipe de apoio, conectividade e EJA não estão na base; essas hipóteses não foram testadas.
+
 ## Equipe
 
-DATASYNC (grupo 11) — nomes e RAs no relatório final.
+DATASYNC (grupo 11). Nomes e RAs no relatório final.
