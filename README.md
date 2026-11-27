@@ -21,13 +21,13 @@ Projeto final da disciplina **Data Project: Modeling & Implementation** (Faculda
 
 ## Principais resultados
 
-| Etapa | Modelo | PR-AUC | Precisão nos 10% de maior risco | Vezes o acaso |
+| Etapa | Modelo | PR-AUC (Reg. Logística) | Precisão nos 10% de maior risco | Vezes o acaso |
 |---|---|---|---|---|
-| Ensino médio | Random Forest | ~0,52 | ~0,59 | ~3,0× |
-| Anos finais | Hist Gradient Boosting | ~0,52 | ~0,59 | ~2,9× |
-| Anos iniciais | Hist Gradient Boosting | ~0,47 | ~0,53 | ~3,5× |
+| Ensino médio | Random Forest | 0,517 (0,494) | 0,594 | 3,0× |
+| Anos finais | Hist Gradient Boosting | 0,516 (0,472) | 0,590 | 2,9× |
+| Anos iniciais | Hist Gradient Boosting | 0,468 (0,412) | 0,533 | 3,5× |
 
-Validação cruzada agrupada por município (5 dobras). **Critério de aceite:** precisão no top 10% ≥ 2× a prevalência e PR-AUC acima da Regressão Logística; atendido nas três etapas. Valores exatos em `resultados/`.
+Validação cruzada agrupada por município (5 dobras). **Critério de aceite:** precisão no top 10% ≥ 2× a prevalência e PR-AUC acima da Regressão Logística; atendido nas três etapas. Valores exatos e relatórios em PDF em `resultados/` (um por fase).
 
 ## Estrutura do repositório
 
@@ -68,4 +68,13 @@ Portal: https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos
 
 ## Equipe
 
-DATASYNC (grupo 11). Nomes e RAs no relatório final.
+DATASYNC · Curso Superior de Tecnologia em Banco de Dados · turma EAD - BD 5A
+
+- Danieli Santos Queiroz
+- Deysianne de Lima Tarcha
+- Divonzi Barbosa do Amaral
+- Jaqueline Luzinete Izidio Silva Sousa
+- Luís Eduardo Gomes
+- Ricardo Carvalho Santos
+- Rodrigo Lima Cunha
+- Rubens Vitorio de Oliveira Santos
